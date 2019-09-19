@@ -1,0 +1,43 @@
+{
+  "name": "styled-strap",
+  "version": "1.0.0",
+  "description": "Add functionality to styled-components",
+  "main": "dist/index.js",
+  "bin": {
+    "pastry": "dist/index.js",
+    "pastry-cli": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "deploy": "tsc && npm publish"
+  },
+  "homepage": "https://github.com/Saschamz/styled-Strap",
+  "author": "Sascha Ringström",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Saschamz/styled-strap.git"
+  },
+  "keywords": [
+    "cli",
+    "template",
+    "blueprint",
+    "paste",
+    "pastry",
+    "reuse"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "styled-components": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "styled-components": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.9",
+    "@types/styled-components": "^4.1.19",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
