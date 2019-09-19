@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "Add functionality to styled-components",
   "main": "dist/index.js",
-  "types": "dist/types.d.ts",
+  "types": "dist/index.d.ts",
   "bin": {
     "pastry": "dist/index.js",
     "pastry-cli": "dist/index.js"
