@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["es2017", "es2015", "dom", "es6"],
     "module": "commonjs",
     "outDir": "./dist",
     "sourceMap": false,
+    "allowSyntheticDefaultImports": false,
     "declaration": true,
     "declarationDir": "./dist",
     "esModuleInterop": true,
     "noImplicitAny": false,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "baseUrl": "."
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
