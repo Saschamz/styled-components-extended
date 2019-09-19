@@ -1,33 +1,4 @@
-export declare type TextKitProps = {
-    centered?: boolean;
-    capitalize?: boolean;
-    uppercase?: boolean;
-    lowercase?: boolean;
-    verticalMargin?: number;
-    fontWeight?: number;
-    fontSize?: number;
-};
-export declare type ViewKitProps = {
-    verticalMargin?: number;
-    horizontalMargin?: number;
-    marginTop?: number;
-    marginBottom?: number;
-    marginLeft?: number;
-    marginRight?: number;
-};
-export declare type FlexRowProps = {
-    spaceBetween?: boolean;
-    spaceAround?: boolean;
-    spaceEvenly?: boolean;
-    centered?: boolean;
-};
-export declare type CircleViewProps = {
-    size: number;
-    color?: string;
-};
-export declare type WhitespaceProps = {
-    space: number;
-};
+import { TextKitProps, FlexRowProps, WhitespaceProps, CircleViewProps, ViewKitProps } from './types';
 export declare let Text: import("styled-components").StyledComponent<typeof import("react-native").Text, import("styled-components").DefaultTheme, TextKitProps, never>;
 export declare function addBaseCssToText(css: any): void;
 export declare let View: import("styled-components").StyledComponent<typeof import("react-native").View, import("styled-components").DefaultTheme, ViewKitProps, never>;
@@ -41,5 +12,4 @@ export declare const CircleView: import("styled-components").StyledComponent<typ
 export declare const BottomAbsoluteContainer: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
 export declare const TopAbsoluteContainer: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
 export declare const FillView: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
-declare const _default: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
-export default _default;
+export declare const FullScreenView: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;

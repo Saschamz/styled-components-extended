@@ -1,2 +1,3 @@
-import TEST from './styled';
-export default TEST;
+import * as cssKit from './mixins';
+export { cssKit };
+export * from './styled';
