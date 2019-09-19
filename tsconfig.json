@@ -6,6 +6,7 @@
     "outDir": "./dist",
     "sourceMap": false,
     "declaration": true,
+    "declarationDir": "./dist",
     "esModuleInterop": true,
     "noImplicitAny": false,
     "moduleResolution": "node"
