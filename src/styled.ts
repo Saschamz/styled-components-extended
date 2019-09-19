@@ -5,7 +5,8 @@ import {
   TextKitProps,
   ViewKitProps,
   FlexRowProps,
-  CircleViewProps
+  CircleViewProps,
+  WhitespaceProps
 } from './types'
 
 export let Text = styled.Text`
