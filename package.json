@@ -4,10 +4,6 @@
   "description": "Add functionality to styled-components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "pastry": "dist/index.js",
-    "pastry-cli": "dist/index.js"
-  },
   "scripts": {
     "build": "tsc",
     "deploy": "tsc && npm publish"
