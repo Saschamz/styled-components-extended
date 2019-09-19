@@ -1,6 +1,6 @@
 {
   "name": "styled-native-kit",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Add functionality to styled-components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
