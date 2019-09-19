@@ -1,3 +1,4 @@
 import * as cssKit from './mixins';
 export { cssKit };
-export * from './styled';
+import * as TEST from './styled';
+export default TEST;
