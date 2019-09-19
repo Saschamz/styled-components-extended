@@ -1,5 +1,5 @@
-import { css } from 'styled-components'
 import { Dimensions } from 'react-native'
+import { css } from 'styled-components'
 
 export const centered = css`
   justify-content: center;

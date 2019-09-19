@@ -1,7 +1,6 @@
-import * as mixins from './mixins'
-import * as styledComponents from './styled'
+import * as cssKit from './mixins'
 
-export default {
-  mixins,
-  ...styledComponents
-}
+export { cssKit }
+
+export * from './styled'
+export * from './types'

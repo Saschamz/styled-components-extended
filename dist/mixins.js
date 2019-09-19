@@ -4,8 +4,8 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
     return cooked;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var styled_components_1 = require("styled-components");
 var react_native_1 = require("react-native");
+var styled_components_1 = require("styled-components");
 exports.centered = styled_components_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  justify-content: center;\n  align-items: center;\n"], ["\n  justify-content: center;\n  align-items: center;\n"])));
 exports.screenHeight = styled_components_1.css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  height: ", ";\n"], ["\n  height: ", ";\n"])), react_native_1.Dimensions.get('screen').height);
 exports.screenWidth = styled_components_1.css(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  height: ", ";\n"], ["\n  height: ", ";\n"])), react_native_1.Dimensions.get('screen').width);

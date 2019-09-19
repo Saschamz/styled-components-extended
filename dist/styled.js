@@ -29,14 +29,17 @@ function addBaseCssToText(css) {
 exports.addBaseCssToText = addBaseCssToText;
 exports.View = native_1.default.View(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  ",
     "\n  ",
-    "\n  ", "\n  ",
+    "\n  ",
+    "\n  ",
     "\n  ",
     "\n  ",
     "\n"])), function (props) {
     return props.verticalMargin && "margin: " + props.verticalMargin + "px 0";
 }, function (props) {
     return props.horizontalMargin && "margin: 0 " + props.verticalMargin + "px";
-}, function (props) { return props.marginTop && "margin-top: " + props.marginTop; }, function (props) {
+}, function (props) {
+    return props.marginTop && "margin-top: " + props.marginTop;
+}, function (props) {
     return props.marginBottom && "margin-bottom: " + props.marginBottom;
 }, function (props) {
     return props.marginLeft && "margin-left: " + props.marginLeft;

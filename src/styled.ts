@@ -1,27 +1,24 @@
 import styled from 'styled-components/native'
 
 import * as mixins from './mixins'
-
-type TextProps = {
-  centered?: boolean
-  capitalize?: boolean
-  uppercase?: boolean
-  lowercase?: boolean
-  verticalMargin?: number
-  fontWeight?: number
-  fontSize?: number
-}
+import {
+  TextKitProps,
+  ViewKitProps,
+  FlexRowProps,
+  WhitespaceProps,
+  CircleViewProps
+} from './types'
 
 export let Text = styled.Text`
-  ${(props: TextProps) => props.centered && `text-align: center`}
-  ${(props: TextProps) => props.capitalize && `text-transform: capitalize`}
-  ${(props: TextProps) => props.uppercase && `text-transform: uppercase`}
-  ${(props: TextProps) => props.lowercase && `text-transform: lowercase`}
-  ${(props: TextProps) =>
+  ${(props: TextKitProps) => props.centered && `text-align: center`}
+  ${(props: TextKitProps) => props.capitalize && `text-transform: capitalize`}
+  ${(props: TextKitProps) => props.uppercase && `text-transform: uppercase`}
+  ${(props: TextKitProps) => props.lowercase && `text-transform: lowercase`}
+  ${(props: TextKitProps) =>
     props.verticalMargin && `margin: ${props.verticalMargin}px 0`}
-  ${(props: TextProps) =>
+  ${(props: TextKitProps) =>
     props.fontWeight && `font-weight: ${props.fontWeight}`}
-  ${(props: TextProps) => props.fontSize && `font-size: ${props.fontSize}`}
+  ${(props: TextKitProps) => props.fontSize && `font-size: ${props.fontSize}`}
 `
 
 export function addBaseCssToText(css: any) {
@@ -30,26 +27,18 @@ export function addBaseCssToText(css: any) {
   `
 }
 
-type ViewProps = {
-  verticalMargin?: number
-  horizontalMargin?: number
-  marginTop?: number
-  marginBottom?: number
-  marginLeft?: number
-  marginRight?: number
-}
-
 export let View = styled.View`
-  ${(props: ViewProps) =>
+  ${(props: ViewKitProps) =>
     props.verticalMargin && `margin: ${props.verticalMargin}px 0`}
-  ${(props: ViewProps) =>
+  ${(props: ViewKitProps) =>
     props.horizontalMargin && `margin: 0 ${props.verticalMargin}px`}
-  ${(props: ViewProps) => props.marginTop && `margin-top: ${props.marginTop}`}
-  ${(props: ViewProps) =>
+  ${(props: ViewKitProps) =>
+    props.marginTop && `margin-top: ${props.marginTop}`}
+  ${(props: ViewKitProps) =>
     props.marginBottom && `margin-bottom: ${props.marginBottom}`}
-  ${(props: ViewProps) =>
+  ${(props: ViewKitProps) =>
     props.marginLeft && `margin-left: ${props.marginLeft}`}
-  ${(props: ViewProps) =>
+  ${(props: ViewKitProps) =>
     props.marginRight && `margin-left: ${props.marginRight}`}
 `
 
@@ -68,13 +57,6 @@ export const CenteredFillView = styled(View)`
   ${mixins.centered};
 `
 
-type FlexRowProps = {
-  spaceBetween?: boolean
-  spaceAround?: boolean
-  spaceEvenly?: boolean
-  centered?: boolean
-}
-
 export const FlexRow = styled(View)`
   flex-direction: row;
   align-items: center;
@@ -91,18 +73,9 @@ export const AlignEndView = styled.View`
   align-items: flex-end;
 `
 
-type WhitespaceProps = {
-  space: number
-}
-
 export const Whitespace = styled(View)`
   height: ${(props: WhitespaceProps) => props.space || 0};
 `
-
-type CircleViewProps = {
-  size: number
-  color?: string
-}
 
 export const CircleView = styled(View)`
   height: ${(props: CircleViewProps) => props.size || 0};
