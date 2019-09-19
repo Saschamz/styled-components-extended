@@ -9,7 +9,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const cssKit = __importStar(require("./mixins"));
+exports.__esModule = true;
+var cssKit = __importStar(require("./mixins"));
 exports.cssKit = cssKit;
 __export(require("./styled"));
