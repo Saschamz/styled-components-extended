@@ -7,7 +7,7 @@ import {
   FlexRowProps,
   CircleViewProps,
   WhitespaceProps
-} from './types'
+} from './styledProps'
 
 export let Text = styled.Text`
   ${(props: TextKitProps) => props.centered && `text-align: center`}
