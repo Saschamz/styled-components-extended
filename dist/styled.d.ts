@@ -1,0 +1,14 @@
+export declare let Text: any;
+export declare function addBaseCssToText(css: any): void;
+export declare let View: any;
+export declare function addBaseCssToView(css: any): void;
+export declare const CenteredView: any;
+export declare const CenteredFillView: any;
+export declare const FlexRow: any;
+export declare const AlignEndView: any;
+export declare const Whitespace: any;
+export declare const CircleView: any;
+export declare const BottomAbsoluteContainer: any;
+export declare const TopAbsoluteContainer: any;
+export declare const FillView: any;
+export declare const FullScreenView: any;
