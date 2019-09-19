@@ -1,6 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var cssKit = require("./mixins");
-exports.cssKit = cssKit;
-var TEST = require("./styled");
-exports.default = TEST;
+var styled_1 = require("./styled");
+exports.default = styled_1.default;

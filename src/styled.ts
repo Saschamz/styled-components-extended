@@ -126,6 +126,6 @@ export const FillView = styled(View)`
   flex: 1;
 `
 
-export const FullScreenView = styled(View)`
+export default FullScreenView = styled(View)`
   ${mixins.screenSize};
 `

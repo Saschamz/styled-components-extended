@@ -41,4 +41,5 @@ export declare const CircleView: import("styled-components").StyledComponent<typ
 export declare const BottomAbsoluteContainer: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
 export declare const TopAbsoluteContainer: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
 export declare const FillView: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
-export declare const FullScreenView: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
+declare const _default: import("styled-components").StyledComponent<typeof import("react-native").View, any, ViewKitProps, never>;
+export default _default;

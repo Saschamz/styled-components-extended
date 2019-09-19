@@ -61,5 +61,5 @@ exports.CircleView = native_1.default(exports.View)(templateObject_10 || (templa
 exports.BottomAbsoluteContainer = native_1.default(exports.View)(templateObject_11 || (templateObject_11 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), mixins.bottomAbsolute);
 exports.TopAbsoluteContainer = native_1.default(exports.View)(templateObject_12 || (templateObject_12 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), mixins.topAbsolute);
 exports.FillView = native_1.default(exports.View)(templateObject_13 || (templateObject_13 = __makeTemplateObject(["\n  flex: 1;\n"], ["\n  flex: 1;\n"])));
-exports.FullScreenView = native_1.default(exports.View)(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), mixins.screenSize);
+exports.default = FullScreenView = native_1.default(exports.View)(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), mixins.screenSize);
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14;

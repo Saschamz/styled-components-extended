@@ -24,7 +24,7 @@
     "bootstrap",
     "foundation"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "styled-components": "^4.3.2"
   },
