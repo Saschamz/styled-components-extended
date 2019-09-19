@@ -1,6 +1,6 @@
-export declare const centered: any;
-export declare const screenHeight: any;
-export declare const screenWidth: any;
-export declare const screenSize: any;
-export declare const topAbsolute: any;
-export declare const bottomAbsolute: any;
+export declare const centered: import("styled-components").FlattenSimpleInterpolation;
+export declare const screenHeight: import("styled-components").FlattenSimpleInterpolation;
+export declare const screenWidth: import("styled-components").FlattenSimpleInterpolation;
+export declare const screenSize: import("styled-components").FlattenSimpleInterpolation;
+export declare const topAbsolute: import("styled-components").FlattenSimpleInterpolation;
+export declare const bottomAbsolute: import("styled-components").FlattenSimpleInterpolation;
