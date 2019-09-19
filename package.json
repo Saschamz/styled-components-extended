@@ -1,5 +1,5 @@
 {
-  "name": "styled-strap",
+  "name": "styled-native-kit",
   "version": "1.0.1",
   "description": "Add functionality to styled-components",
   "main": "dist/index.js",
@@ -11,19 +11,18 @@
     "build": "tsc",
     "deploy": "tsc && npm publish"
   },
-  "homepage": "https://github.com/Saschamz/styled-Strap",
+  "homepage": "https://github.com/Saschamz/styled-native-kit",
   "author": "Sascha Ringström",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Saschamz/styled-strap.git"
+    "url": "git@github.com:Saschamz/styled-native-kit.git"
   },
   "keywords": [
-    "cli",
-    "template",
-    "blueprint",
-    "paste",
-    "pastry",
-    "reuse"
+    "styled-components",
+    "react-native",
+    "kit",
+    "bootstrap",
+    "foundation"
   ],
   "license": "ISC",
   "dependencies": {
