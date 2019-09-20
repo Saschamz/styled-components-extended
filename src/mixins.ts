@@ -32,3 +32,11 @@ export const bottomAbsolute = css`
   left: 0;
   right: 0;
 `
+
+export const overlay = css`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+`
