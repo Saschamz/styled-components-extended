@@ -29,6 +29,7 @@ export interface ViewKitProps extends BaseProps, ViewProps {
   marginRight?: number
   relative?: boolean
   absolute?: boolean
+  overflowHidden?: boolean
 }
 
 export interface FlexRowProps extends ViewKitProps {
@@ -40,7 +41,6 @@ export interface FlexRowProps extends ViewKitProps {
 
 export interface CircleViewProps extends ViewKitProps {
   size: number
-  color: string
 }
 
 export interface WhitespaceProps extends ViewKitProps {

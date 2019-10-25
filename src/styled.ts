@@ -5,7 +5,6 @@ import {
   TextKitProps,
   FlexRowProps,
   WhitespaceProps,
-  CircleViewProps,
   ViewKitProps,
   SpacingProps
 } from './types'
@@ -53,6 +52,7 @@ export const View = styled.View`
   ${(props: ViewKitProps) =>
     props.marginRight && `margin-right: ${props.marginRight}`}
   ${(props: ViewKitProps) => props.zIndex && `z-index: ${props.zIndex}`}
+  ${(props: ViewKitProps) => props.overflowHidden && 'overflow: hidden'}
 `
 
 export const SafeAreaView = styled.SafeAreaView`
@@ -120,11 +120,12 @@ export const Spacing = styled(View)`
 `
 
 export const CircleView = styled(View)`
-  height: ${(props: CircleViewProps) => props.size || 0};
-  width: ${(props: CircleViewProps) => props.size || 0};
-  border-radius: ${(props: CircleViewProps) => props.size / 2 || 0};
-
+  ${mixins.circle}
   ${mixins.centered};
+`
+
+export const CircleMask = styled(CircleView)`
+  overflow: hidden;
 `
 
 export const BottomAbsoluteView = styled(View)`

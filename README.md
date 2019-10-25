@@ -64,6 +64,19 @@ align-items: flex-end;
 
 `<CircleView />`
 
+```css
+${cssKit.circle}
+${cssKit.centered}
+```
+
+`<CircleMask />`
+
+```css
+${cssKit.circle}
+${cssKit.centered}
+overflow: hidden;
+```
+
 **SEE PROPS**
 
 ```css
@@ -121,16 +134,16 @@ right: 0;
 ```typescript
 import { TextProps, ViewProps } from 'react-native'
 
-type BaseProps = {
-  marginTop?: number // null
-  marginBottom?: number // null
-  zIndex?: number // null
-  color?: string // null
-  verticalMargin?: number // null
-  horizontalMargin?: number // null
+interface BaseProps {
+  marginTop?: number
+  marginBottom?: number
+  zIndex?: number
+  color?: string
+  verticalMargin?: number
+  horizontalMargin?: number
 }
 
-type TextKitProps = {
+interface TextKitProps extends BaseProps, TextProps {
   centered?: boolean
   capitalize?: boolean
   alignLeft?: boolean
@@ -139,10 +152,9 @@ type TextKitProps = {
   lowercase?: boolean
   fontWeight?: number
   fontSize?: number
-} & BaseProps &
-  TextProps
+}
 
-type ViewKitProps = {
+interface ViewKitProps extends BaseProps, ViewProps {
   width?: number
   height?: number
   padding?: number
@@ -151,30 +163,29 @@ type ViewKitProps = {
   marginRight?: number
   relative?: boolean
   absolute?: boolean
-} & BaseProps &
-  ViewProps
+  overflowHidden?: boolean
+}
 
-type FlexRowProps = {
+interface FlexRowProps extends ViewKitProps {
   spaceBetween?: boolean
   spaceAround?: boolean
   spaceEvenly?: boolean
   centered?: boolean
-} & ViewKitProps
+}
 
-type CircleViewProps = {
+interface CircleViewProps extends ViewKitProps {
   size: number
-  color: string
-} & ViewKitProps
+}
 
-type WhitespaceProps = {
+interface WhitespaceProps extends ViewKitProps {
   space: number
-} & ViewKitProps
+}
 
-type SpacingProps = {
-  multiplier?: number // default: 1
-  base?: number // default: 8
-  horizontal?: boolean // default: false
-} & ViewKitProps
+interface SpacingProps extends ViewKitProps {
+  multiplier?: number
+  base?: number
+  horizontal?: boolean
+}
 ```
 
 # Mixins
@@ -218,5 +229,11 @@ const overlay = css`
   bottom: 0;
   left: 0;
   right: 0;
+`
+
+const circle = css`
+  height: ${(props: CircleViewProps) => props.size || 0};
+  width: ${(props: CircleViewProps) => props.size || 0};
+  border-radius: ${(props: CircleViewProps) => props.size / 2 || 0};
 `
 ```

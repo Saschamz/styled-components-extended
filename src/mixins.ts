@@ -1,5 +1,6 @@
 import { Dimensions } from 'react-native'
 import { css } from 'styled-components'
+import { CircleViewProps } from './types'
 
 export const centered = css`
   justify-content: center;
@@ -39,4 +40,10 @@ export const overlay = css`
   bottom: 0;
   left: 0;
   right: 0;
+`
+
+export const circle = css`
+  height: ${(props: CircleViewProps) => props.size || 0};
+  width: ${(props: CircleViewProps) => props.size || 0};
+  border-radius: ${(props: CircleViewProps) => props.size / 2 || 0};
 `
