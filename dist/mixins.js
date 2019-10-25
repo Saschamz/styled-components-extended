@@ -12,4 +12,5 @@ exports.screenWidth = styled_components_1.css(templateObject_3 || (templateObjec
 exports.screenSize = styled_components_1.css(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  ", ";\n  ", ";\n"], ["\n  ", ";\n  ", ";\n"])), exports.screenHeight, exports.screenWidth);
 exports.topAbsolute = styled_components_1.css(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n"])));
 exports.bottomAbsolute = styled_components_1.css(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n"], ["\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n"])));
-var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
+exports.overlay = styled_components_1.css(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n"], ["\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n"])));
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;

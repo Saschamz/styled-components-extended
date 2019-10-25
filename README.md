@@ -58,6 +58,10 @@ align-items: flex-end;
 
 **SEE PROPS**
 
+`<Spacing />`
+
+**SEE PROPS**
+
 `<CircleView />`
 
 **SEE PROPS**
@@ -110,11 +114,22 @@ right: 0;
 
 ## Props
 
-`ViewKitProps` are available to all View components
+`ViewKitProps` are available to all View based components
 
-`TextKitProps` are available to all Text components
+`TextKitProps` are available to all Text based components
 
 ```typescript
+import { TextProps, ViewProps } from 'react-native'
+
+type BaseProps = {
+  marginTop?: number // null
+  marginBottom?: number // null
+  zIndex?: number // null
+  color?: string // null
+  verticalMargin?: number // null
+  horizontalMargin?: number // null
+}
+
 type TextKitProps = {
   centered?: boolean
   capitalize?: boolean
@@ -122,45 +137,44 @@ type TextKitProps = {
   alignRight?: boolean
   uppercase?: boolean
   lowercase?: boolean
-  verticalMargin?: number
   fontWeight?: number
   fontSize?: number
-  color?: string
-  zIndex?: number
-  marginTop?: number
-  marginBottom?: number
-}
+} & BaseProps &
+  TextProps
 
 type ViewKitProps = {
-  verticalMargin?: number
-  horizontalMargin?: number
   width?: number
   height?: number
   padding?: number
   margin?: number
-  marginTop?: number
-  marginBottom?: number
   marginLeft?: number
   marginRight?: number
-  color?: string
-  zIndex?: number
-}
+  relative?: boolean
+  absolute?: boolean
+} & BaseProps &
+  ViewProps
 
 type FlexRowProps = {
   spaceBetween?: boolean
   spaceAround?: boolean
   spaceEvenly?: boolean
   centered?: boolean
-}
+} & ViewKitProps
 
 type CircleViewProps = {
   size: number
-  color?: string
-}
+  color: string
+} & ViewKitProps
 
 type WhitespaceProps = {
   space: number
-}
+} & ViewKitProps
+
+type SpacingProps = {
+  multiplier?: number // default: 1
+  base?: number // default: 8
+  horizontal?: boolean // default: false
+} & ViewKitProps
 ```
 
 # Mixins
