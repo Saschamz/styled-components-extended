@@ -1,6 +1,6 @@
 import { TextProps, ViewProps } from 'react-native'
 
-export type BaseProps = {
+export interface BaseProps {
   marginTop?: number
   marginBottom?: number
   zIndex?: number
@@ -9,7 +9,7 @@ export type BaseProps = {
   horizontalMargin?: number
 }
 
-export type TextKitProps = {
+export interface TextKitProps extends BaseProps, TextProps {
   centered?: boolean
   capitalize?: boolean
   alignLeft?: boolean
@@ -18,10 +18,9 @@ export type TextKitProps = {
   lowercase?: boolean
   fontWeight?: number
   fontSize?: number
-} & BaseProps &
-  TextProps
+}
 
-export type ViewKitProps = {
+export interface ViewKitProps extends BaseProps, ViewProps {
   width?: number
   height?: number
   padding?: number
@@ -30,27 +29,26 @@ export type ViewKitProps = {
   marginRight?: number
   relative?: boolean
   absolute?: boolean
-} & BaseProps &
-  ViewProps
+}
 
-export type FlexRowProps = {
+export interface FlexRowProps extends ViewKitProps {
   spaceBetween?: boolean
   spaceAround?: boolean
   spaceEvenly?: boolean
   centered?: boolean
-} & ViewKitProps
+}
 
-export type CircleViewProps = {
+export interface CircleViewProps extends ViewKitProps {
   size: number
   color: string
-} & ViewKitProps
+}
 
-export type WhitespaceProps = {
+export interface WhitespaceProps extends ViewKitProps {
   space: number
-} & ViewKitProps
+}
 
-export type SpacingProps = {
+export interface SpacingProps extends ViewKitProps {
   multiplier?: number
   base?: number
   horizontal?: boolean
-} & ViewKitProps
+}
