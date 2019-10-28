@@ -132,9 +132,13 @@ export const BottomAbsoluteView = styled(View)`
   ${mixins.bottomAbsolute};
 `
 
+export const BottomAbsoluteContainer = BottomAbsoluteView
+
 export const TopAbsoluteView = styled(View)`
   ${mixins.topAbsolute};
 `
+
+export const TopAbsoluteContainer = TopAbsoluteView
 
 export const FillView = styled(View)`
   flex: 1;
