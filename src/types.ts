@@ -1,5 +1,5 @@
+import { ReactNode } from 'react'
 import { TextProps, ViewProps } from 'react-native'
-
 export interface BaseProps {
   marginTop?: number
   marginBottom?: number
@@ -7,6 +7,7 @@ export interface BaseProps {
   color?: string
   verticalMargin?: number
   horizontalMargin?: number
+  children?: ReactNode
 }
 
 export interface TextKitProps extends BaseProps, TextProps {
